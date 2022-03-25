@@ -5,6 +5,7 @@ mylist = []
 for letter in mystring:
     mylist.append(letter)
 print(mylist)
+
 #flat for loop does the same things but quicker
 mylist = [letter for letter in mystring]
 print(mylist)
@@ -21,6 +22,7 @@ print(mylist)
 #This squares the temp variable within a range of 0,11 and then uses mod 2 = 0 to generate a list of all the even numbers.
 mylist = [x**2 for x in range(0,11) if x%2==0]
 print(mylist)
+
 #These do the same things. These are called flattened for loops. The examples above are a really quick way to generate a large list of numbers
 celsius = [0,10,20,30,40]
 fahrenheight = []
@@ -30,6 +32,7 @@ print(fahrenheight)
 #Converts celsisus to fahrenheight
 fahrenheight = [C for temp in celsius]
 print(fahrenheight)
+
 #Idk how I made it work, but this is code converted celsuis to fahrenheight while accepting both intergers and floating point numbers.
 def convert(celsius,fahrenheight):
     try:
