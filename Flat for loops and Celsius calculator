@@ -35,13 +35,13 @@ print(fahrenheight)
 
 #Idk how I made it work, but this is code converted celsuis to fahrenheight while accepting both intergers and floating point numbers.
 def convert(celsius,fahrenheight):
-    try:
-        return int(fahrenheight)
-    except float(fahrenheight):
-        celsius = int(input('Type in the temperature in Celsius: '))
-        fahrenheight = 9/5*celsius+32
+    #Some Fun
 
+def convert(celsius,fahrenheight):
+    return int(fahrenheight)
+    
 celsius = float(input('Type in the temperature in Celsius: '))
+
 fahrenheight = 9/5*celsius+32
 
 print(f'The temperature in Fahrenheight is {fahrenheight}')
