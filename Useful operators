@@ -15,7 +15,7 @@ for letter in word:
     print(f'At index {index_count} the letter is {letter}')
     if letter == 'g':
         break
-        index_count +=1
+    index_count +=1
 print('\n')
     
 index_count = 0
