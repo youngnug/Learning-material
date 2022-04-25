@@ -1,3 +1,4 @@
+#Work in progress. Only kinda works for even numbers, and I still want to be able to iterate through the list to guess the number exactly.
 import random
 print('Hello, think of a random number between 1 and 100!')
 
