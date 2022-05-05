@@ -1,3 +1,4 @@
+#Ball game
 from random import shuffle
 #Ball in cup
 balls = ['','O','']
@@ -13,10 +14,9 @@ def player_guess():
     return int(guess)
 #Assign varibale for result of shuffle and result of guess
 shuffle_result = shuffle_list(balls)
-guess_index = player_guess()
 #Function to check if the result of shuffle at index of player guess equals the ball ('O')
-def guess_result(shuffle_result,guess_index):
-    if shuffle_result[guess_index] == 'O':
+def guess_result(shuffle_result,guess):
+    if shuffle_result[guess] == 'O':
         print("You gussed corretly!")
         print(shuffle_result)
     else:
@@ -27,6 +27,8 @@ def guess_result(shuffle_result,guess_index):
 #Initial list
 balls = ['','O','']
 #shuffle the list
-shuffle_list(balls)
+shuffle_result = shuffle_list(balls)
+#Player guess
+guess = player_guess()
 #check if its a correct guessed
-guess_result(shuffle_result,guess_index)
+guess_result(shuffle_result,guess)
