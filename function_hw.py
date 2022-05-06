@@ -27,3 +27,15 @@ def makes_twenty(num1,num2):
 print(makes_twenty(20,10))
 print(makes_twenty(12,8))
 print(makes_twenty(2,3))
+
+# OLD MACDONALD: Write a function that capitalizes the first and fourth letters of a name
+def old_macdonald(cap_first_and_fourth):
+    out = []
+    for index,letter in enumerate(cap_first_and_fourth):
+        if index == 0 or index == 3:
+            out.append(cap_first_and_fourth[index].upper())
+        else:
+            out.append(cap_first_and_fourth[index])
+    return ''.join(out)
+
+print(old_macdonald('macdonald'))
