@@ -18,3 +18,12 @@ def animal_crackers(word1,word2):
 
 print(animal_crackers('lala','lala'))
 print(animal_crackers('lala','bala'))
+
+#MAKES TWENTY: Given two integers, return True if the sum of the integers is 20 or if one of the integers is 20. If not, return False
+def makes_twenty(num1,num2):
+    check_twenty = 20
+    return num1 == check_twenty or num2 == check_twenty or num1 + num2 == check_twenty
+        
+print(makes_twenty(20,10))
+print(makes_twenty(12,8))
+print(makes_twenty(2,3))
