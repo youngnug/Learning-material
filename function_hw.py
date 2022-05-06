@@ -6,5 +6,15 @@ def lesser_of_two_evens(num1,num2):
         return smaller_num
     else:
         return greater_num
-        
+
+print(lesser_of_two_evens(2,4))        
 print(lesser_of_two_evens(2,5))
+
+#ANIMAL CRACKERS: Write a function takes a two-word string and returns True if both words begin with same letter
+def animal_crackers(word1,word2):
+    first_letter1 = word1[0]
+    first_letter2 = word2[0]
+    return first_letter1 == first_letter2
+
+print(animal_crackers('lala','lala'))
+print(animal_crackers('lala','bala'))
