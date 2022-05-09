@@ -1,3 +1,4 @@
+#WARMUPS:
 #LESSER OF TWO EVENS: Write a function that returns the lesser of two given numbers if both numbers are even, but returns the greater if one or both numbers are odd
 def lesser_of_two_evens(num1,num2):
     greater_num = max(num1,num2)
@@ -28,6 +29,7 @@ print(makes_twenty(20,10))
 print(makes_twenty(12,8))
 print(makes_twenty(2,3))
 
+#LEVEL 1 PROBLEMS
 # OLD MACDONALD: Write a function that capitalizes the first and fourth letters of a name
 def old_macdonald(cap_first_and_fourth):
     out = []
@@ -37,7 +39,14 @@ def old_macdonald(cap_first_and_fourth):
         else:
             out.append(cap_first_and_fourth[index])
     return ''.join(out)
+#could also do
 
+def old_macdonald(name):
+    first_half = name[:3]
+    last_half = name[3:]
+    return first_half.capitalize() + last_half.capitalize()
+
+print(old_macdonald("macdonald"))
 print(old_macdonald('macdonald'))
 
 #MASTER YODA: Given a sentence, return a sentence with the words reversed
@@ -62,6 +71,7 @@ print(almost_there(104))
 print(almost_there(150))
 print(almost_there(209))
 
+#LEVEL 2 PROBLEMS
 #FIND 33:
 #Given a list of ints, return True if the array contains a 3 next to a 3 somewhere.
 
