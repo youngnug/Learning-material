@@ -39,3 +39,10 @@ def old_macdonald(cap_first_and_fourth):
     return ''.join(out)
 
 print(old_macdonald('macdonald'))
+
+#MASTER YODA: Given a sentence, return a sentence with the words reversed
+def cap_every_other(word):
+    return " ".join(word.split()[::-1])
+    
+result = cap_every_other("We are ready")
+print(result)
