@@ -46,3 +46,18 @@ def cap_every_other(word):
     
 result = cap_every_other("We are ready")
 print(result)
+
+#ALMOST THERE: Given an integer n, return True if n is within 10 of either 100 or 200
+
+def almost_there(num):
+    #if num is 10 greater than or 10 less than 100, return True. Do the same for 200
+    return 90 <= num <= 110 or 190 <= num <= 210
+#or 
+
+def almost_there(n):
+    return ((abs(100 - n) <= 10) or (abs(200 - n) <= 10))
+
+print(almost_there(90))
+print(almost_there(104))
+print(almost_there(150))
+print(almost_there(209))
