@@ -80,6 +80,7 @@ print(has_33([3, 1, 3]))
 
 #BLACKJACK: Given three intergers between 1 and 11, if their sum is less than or equal to 21, return their sum. If their sum exceeds 21 and there's an eleven, reduce the sum by 10
 #If they exceed 21 straight up, "BUST"
+
 #Boring verson
 
 def blackjack(*args):
@@ -93,3 +94,26 @@ def blackjack(*args):
             return score
         else:
             return 'BUST'
+        
+#Fun version:
+
+import random
+
+rand_list = [random.randint(0,11) for nums in range(0,3)]
+print(rand_list)
+
+#Random int from 0-11
+def blackjack(rand_list):
+    score = sum(rand_list)
+    for nums in rand_list:
+        if nums == 11 and score > 21:
+            score -= 10
+        if score == 21:
+            return "You won!"
+        elif score < 21:
+            return score
+        else:
+            return 'BUST'
+
+print(blackjack(rand_list))
+
