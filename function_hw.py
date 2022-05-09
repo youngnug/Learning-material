@@ -77,3 +77,19 @@ print(has_33([3, 1, 3]))
 #Ok, this is what I had except for the -1 after nums, why is that there? Because nums[i+1] is saying to check if the next index matches, but if you're at the last
 #element in the list, there's no next index, so it tosses an error. The -1 is the stop point in the range(start,stop,increment) function and stops the second to last
 #element to avoid the error. We don't need to actually increment to the last element since we're checking it at the index before.
+
+#BLACKJACK: Given three intergers between 1 and 11, if their sum is less than or equal to 21, return their sum. If their sum exceeds 21 and there's an eleven, reduce the sum by 10
+#If they exceed 21 straight up, "BUST"
+#Boring verson
+
+def blackjack(*args):
+    score = sum(args)
+    for nums in args:
+        if nums == 11 and score > 21:
+            score -= 10
+        if score == 21:
+            return "You won!"
+        elif score < 21:
+            return score
+        else:
+            return 'BUST'
