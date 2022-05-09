@@ -39,6 +39,7 @@ def old_macdonald(cap_first_and_fourth):
         else:
             out.append(cap_first_and_fourth[index])
     return ''.join(out)
+
 #could also do
 
 def old_macdonald(name):
