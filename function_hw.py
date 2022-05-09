@@ -109,11 +109,10 @@ def blackjack(*args):
 #Fun version:
 
 import random
-
+#Random int from 0-11
 rand_list = [random.randint(0,11) for nums in range(0,3)]
 print(rand_list)
-
-#Random int from 0-11
+#Fucntion that does the adding and blah blah passed in 3 args from random generator
 def blackjack(rand_list):
     score = sum(rand_list)
     for nums in rand_list:
