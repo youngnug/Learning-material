@@ -51,10 +51,10 @@ print(old_macdonald("macdonald"))
 print(old_macdonald('macdonald'))
 
 #MASTER YODA: Given a sentence, return a sentence with the words reversed
-def cap_every_other(word):
+def yoda(word):
     return " ".join(word.split()[::-1])
     
-result = cap_every_other("We are ready")
+result = yoda("We are ready")
 print(result)
 
 #ALMOST THERE: Given an integer n, return True if n is within 10 of either 100 or 200
